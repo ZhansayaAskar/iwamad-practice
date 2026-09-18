@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instagram-style profile of Zhansaya Askar">
+    <title>Zhansaya Askar — Profile</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col items-center bg-gray-100 p-4">
+
+    <header class="page-header text-center mb-6">
+        <h2 class="text-xl font-semibold text-gray-800">My Profile</h2>
+    </header>
+
+    <main class="profile-card bg-white p-6 border border-gray-200 rounded-xl shadow-md max-w-md w-full">
+
+        <section class="flex flex-col items-center text-center">
+            <img src="avatar.jpeg" alt="Zhansaya Askar" class="w-32 h-32 rounded-full object-cover border-4 border-white shadow">
+            <h1 class="text-2xl font-bold mt-4">Soulshadow_</h1>
+
+            <ul class="stats mt-3 flex justify-center gap-6 text-gray-700 text-sm">
+                <li><strong class="text-gray-900">0</strong> posts</li>
+                <li><strong class="text-gray-900">117</strong> followers</li>
+                <li><strong class="text-gray-900">122</strong> following</li>
+            </ul>
+
+            <p class="text-gray-500 mt-3">Zhansaya Askar · IT Management Student at KBTU</p>
+        </section>
+
+        <section class="mt-4 text-center">
+            <p class="text-gray-700">
+                Hi! I'm Zhansaya from Kazakhstan. I'm an IT Management 3rd year
+                student at KBTU, interested in data analytics and web development.
+                I love learning new technologies and building things for the web.
+            </p>
+        </section>
+
+        <section class="mt-4 flex flex-col items-center gap-2">
+            <a href="mailto:askarzhansaya7@gmail.com" class="text-blue-600 hover:underline">
+                askarzhansaya7@gmail.com
+            </a>
+            <a href="https://github.com/ZhansayaAskar" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
+                github.com/ZhansayaAskar
+            </a>
+        </section>
+
+        <div class="mt-6 flex justify-center">
+            <button id="likeBtn" class="like-btn">🤍 Like</button>
+        </div>
+
+    </main>
+
+    <footer class="page-footer text-center mt-8 text-sm text-gray-500">
+        <p>&copy; 2026 Zhansaya Askar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
