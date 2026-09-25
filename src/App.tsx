@@ -10,10 +10,10 @@ type Skill = {
 
 function App() {
   const skills: Skill[] = [
-   // { id: 1, label: 'AWS' },
-    //{ id: 2, label: 'SQL' },
-    //{ id: 3, label: 'Power BI' },
-    //{ id: 4, label: 'C++' },
+    { id: 1, label: 'AWS' },
+    { id: 2, label: 'SQL' },
+    { id: 3, label: 'Power BI' },
+    { id: 4, label: 'C++' },
   ];
 
   return (
