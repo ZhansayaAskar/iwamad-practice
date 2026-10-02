@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import SkillBadge from './SkillBadge';
+import LikeButton from './LikeButton';
 
 type Skill = {
   id: number;
@@ -33,12 +33,6 @@ function ProfileCard({
   stats,
   skills,
 }: ProfileCardProps) {
-  const [liked, setLiked] = useState(false);
-
-  const handleLike = () => {
-    setLiked(!liked);
-  };
-
   return (
     <main className="profile-card bg-white p-6 border border-gray-200 rounded-xl shadow-md max-w-md w-full">
       <section className="flex flex-col items-center text-center">
@@ -63,9 +57,7 @@ function ProfileCard({
       </section>
 
       <section className="mt-4 flex flex-col items-center gap-2">
-        <a href={`mailto:${email}`} className="text-blue-600 hover:underline">
-          {email}
-        </a>
+        <a href={`mailto:${email}`} className="text-blue-600 hover:underline">{email}</a>
         <a href={github} target="_blank" rel="noopener" className="text-blue-600 hover:underline">
           {github.replace('https://', '')}
         </a>
@@ -85,12 +77,7 @@ function ProfileCard({
       </section>
 
       <div className="mt-6 flex justify-center">
-        <button
-          className={liked ? 'like-btn liked' : 'like-btn'}
-          onClick={handleLike}
-        >
-          {liked ? '❤️ Liked' : '🤍 Like'}
-        </button>
+        <LikeButton />
       </div>
     </main>
   );

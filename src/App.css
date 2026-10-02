@@ -5,8 +5,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #262626;
-  margin: 0; /* BOX MODEL: margin - reset browser default */
-  padding: 24px; /* BOX MODEL: padding - space around the page */
+  margin: 0; /* margin reset */
+  padding: 24px; /* padding around page */
   min-height: 100vh;
 }
 
@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid #e5e7eb; /* BOX MODEL: border - card outline */
+  border: 1px solid #e5e7eb; /*  card outline */
   margin: 0;
 }
 
@@ -40,5 +40,22 @@ body {
 }
 
 .page-footer {
-  margin-top: 32px; /* BOX MODEL: margin - space above footer */
+  margin-top: 32px; /* margin space above footer */
+}
+
+.nav-link {
+  color: #4b5563;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6;
+}
+
+.nav-link.active {
+  color: #111827;
+  font-weight: 600;
+  background-color: #e5e7eb;
 }
