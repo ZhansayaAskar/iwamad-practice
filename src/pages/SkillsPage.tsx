@@ -21,8 +21,8 @@ function SkillsPage() {
       {skills.length > 0 ? (
         <ul className="flex flex-wrap gap-2 justify-center">
           {skills.map((skill) => (
-            <SkillBadge key={skill.id} skill={skill} />
-          ))}
+  <SkillBadge key={skill.id} skill={skill} />
+))}
         </ul>
       ) : (
         <p className="text-gray-500 text-sm text-center">No skills added yet.</p>

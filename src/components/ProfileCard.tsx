@@ -1,3 +1,4 @@
+import { Card } from './ui/Card';
 import SkillBadge from './SkillBadge';
 import LikeButton from './LikeButton';
 
@@ -34,7 +35,7 @@ function ProfileCard({
   skills,
 }: ProfileCardProps) {
   return (
-    <main className="profile-card bg-white p-6 border border-gray-200 rounded-xl shadow-md max-w-md w-full">
+    <Card>
       <section className="flex flex-col items-center text-center">
         <img
           src={avatarUrl}
@@ -68,7 +69,9 @@ function ProfileCard({
         {skills.length > 0 ? (
           <ul className="flex flex-wrap gap-2 justify-center">
             {skills.map((skill) => (
-              <SkillBadge key={skill.id} skill={skill} />
+              <li key={skill.id}>
+                <SkillBadge skill={skill} />
+              </li>
             ))}
           </ul>
         ) : (
@@ -79,7 +82,7 @@ function ProfileCard({
       <div className="mt-6 flex justify-center">
         <LikeButton />
       </div>
-    </main>
+    </Card>
   );
 }
 

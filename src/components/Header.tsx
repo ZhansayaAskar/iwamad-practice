@@ -1,3 +1,4 @@
+import logo from '../assets/logo.svg';
 import { NavLink } from 'react-router';
 import { useLikes } from '../context/LikesContext';
 
@@ -5,12 +6,15 @@ function Header() {
   const { likes } = useLikes();
 
   return (
-    <header className="page-header text-center mb-6 w-full max-w-md">
-      <h2 className="text-xl font-semibold text-gray-800 mb-3">My Profile</h2>
+    <header className="page-header text-center mb-6 w-full max-w-md flex flex-col items-center gap-2 sm:flex-row sm:justify-between sm:items-center sm:gap-4">
+      <div className="flex items-center gap-2">
+        <img src={logo} alt="" width={32} height={32} />
+        <h2 className="text-xl font-semibold text-gray-800">My Profile</h2>
+      </div>
 
-      <p className="text-sm text-gray-600 mb-2">♥ {likes}</p>
+      <p className="text-sm text-gray-600">♥ {likes}</p>
 
-      <nav className="flex justify-center gap-4 text-sm">
+      <nav className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4 text-sm">
         <NavLink
           to="/"
           end
