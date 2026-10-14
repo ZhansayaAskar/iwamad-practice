@@ -34,6 +34,7 @@ function Header() {
         >
           Contact
         </NavLink>
+        <NavLink to="/register">Register</NavLink>
       </nav>
     </header>
   );
