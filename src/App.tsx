@@ -6,6 +6,8 @@ import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { RegisterPage } from './pages/RegisterPage';
 import './App.css';
+import { EventsPage } from './pages/EventsPage';
+import { EventDetailsPage } from './pages/EventDetailsPage';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
         <Route path="register" element={<RegisterPage />} />
+        <Route path="events" element={<EventsPage />} />
+        <Route path="events/:eventId" element={<EventDetailsPage />} />
       </Route>
     </Routes>
   );
